@@ -53,7 +53,7 @@ export default function Counter() {
           data-tclass="btn"
           type="button"
         >
-          odd
+          odd1111
         </button>
         <button
           className={styles.btn}
