@@ -10,6 +10,9 @@ module.exports = {
     'import/extensions': 'off',
     'react/jsx-one-expression-per-line': 'off',
     'react/jsx-props-no-spreading': 'off',
+    'react/jsx-wrap-multilines': 'off',
+    'react/jsx-closing-tag-location': 'off',
+    'prettier/prettier': 'off',
   },
   parserOptions: {
     ecmaVersion: 2020,

@@ -1,5 +1,8 @@
 import React from 'react';
+import { Input } from '@material-ui/core';
 
 export default function App() {
-  return <div> main app11o22221</div>;
+  return <div>
+    <Input fullWidth placeholder="input" type='file' />
+  </div>;
 }
