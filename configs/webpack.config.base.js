@@ -36,6 +36,9 @@ export default {
   resolve: {
     extensions: ['.js', '.jsx', '.json', '.ts', '.tsx'],
     modules: [path.join(__dirname, '..', 'app'), 'node_modules'],
+    alias: {
+      '@': path.join(__dirname, '..', 'app'),
+    },
   },
 
   plugins: [

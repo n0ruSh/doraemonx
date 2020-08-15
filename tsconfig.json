@@ -20,7 +20,12 @@
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "resolveJsonModule": true,
-    "allowJs": true
+    "allowJs": true,
+    "typeRoots": ["typings"],
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["app/*"]
+    }
   },
   "exclude": [
     "test",

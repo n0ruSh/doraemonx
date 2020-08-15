@@ -1,6 +1,6 @@
 {
-  "name": "Doraemonx",
-  "productName": "Doraemonx",
+  "name": "doraemonx",
+  "productName": "doraemonx",
   "version": "0.0.1",
   "description": "Tool box",
   "scripts": {
@@ -29,12 +29,7 @@
     "start": "cross-env NODE_ENV=production electron ./app/main.prod.js",
     "start-main-debug": "yarn start-main-dev --inspect=5858 --remote-debugging-port=9223",
     "start-main-dev": "cross-env START_HOT=1 NODE_ENV=development electron -r ./internals/scripts/BabelRegister ./app/main.dev.ts",
-    "start-renderer-dev": "cross-env NODE_ENV=development webpack-dev-server --config configs/webpack.config.renderer.dev.babel.js",
-    "test": "cross-env BABEL_DISABLE_CACHE=1 jest",
-    "test-all": "yarn lint && yarn tsc && yarn build && yarn test",
-    "test-e2e": "node -r @babel/register ./internals/scripts/CheckBuildsExist.js && cross-env NODE_ENV=test testcafe electron:./app ./test/e2e/HomePage.e2e.ts",
-    "test-e2e-live": "node -r @babel/register ./internals/scripts/CheckBuildsExist.js && cross-env NODE_ENV=test testcafe --live electron:./app ./test/e2e/HomePage.e2e.ts",
-    "test-watch": "yarn test --watch"
+    "start-renderer-dev": "cross-env NODE_ENV=development webpack-dev-server --config configs/webpack.config.renderer.dev.babel.js"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
@@ -124,7 +119,6 @@
   "keywords": [
     "electron",
     "react",
-    "redux",
     "typescript",
     "ts",
     "sass",
@@ -185,11 +179,9 @@
     "@types/node": "12",
     "@types/react": "^16.9.38",
     "@types/react-dom": "^16.9.8",
-    "@types/react-redux": "^7.1.9",
     "@types/react-router": "^5.1.8",
     "@types/react-router-dom": "^5.1.5",
     "@types/react-test-renderer": "^16.9.2",
-    "@types/redux-logger": "^3.0.8",
     "@types/webpack": "^4.41.17",
     "@types/webpack-env": "^1.15.2",
     "@typescript-eslint/eslint-plugin": "^3.5.0",
@@ -238,7 +230,6 @@
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "prettier": "^2.0.5",
     "react-test-renderer": "^16.12.0",
-    "redux-logger": "^3.0.6",
     "rimraf": "^3.0.0",
     "sass-loader": "^8.0.2",
     "style-loader": "^1.2.1",
@@ -261,8 +252,6 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.13.1",
     "@hot-loader/react-dom": "^16.13.0",
-    "@reduxjs/toolkit": "^1.4.0",
-    "connected-react-router": "^6.6.1",
     "electron-debug": "^3.1.0",
     "electron-log": "^4.2.2",
     "electron-updater": "^4.3.1",
@@ -270,10 +259,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.12.0",
     "react-hot-loader": "^4.12.21",
-    "react-redux": "^7.2.0",
     "react-router-dom": "^5.2.0",
-    "redux": "^4.0.5",
-    "redux-thunk": "^2.3.0",
     "source-map-support": "^0.5.19"
   },
   "devEngines": {
